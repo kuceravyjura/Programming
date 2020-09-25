@@ -1,0 +1,2 @@
+D:\hg\ConsoleApplication4\Debug\ConsoleApplication4.exe
+D:\hg\ConsoleApplication4\Debug\ConsoleApplication4.pdb
