@@ -1,0 +1,2 @@
+D:\Programming\Practice\07\C++\треугольник\Debug\треугольник.exe
+D:\Programming\Practice\07\C++\треугольник\Debug\треугольник.pdb
