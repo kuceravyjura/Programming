@@ -1,0 +1,2 @@
+D:\Programming\Practice\10\C++\Фиксированная сумма\Debug\Фиксированная сумма.exe
+D:\Programming\Practice\10\C++\Фиксированная сумма\Debug\Фиксированная сумма.pdb

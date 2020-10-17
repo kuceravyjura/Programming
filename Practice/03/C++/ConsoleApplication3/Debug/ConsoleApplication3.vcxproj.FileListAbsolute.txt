@@ -1,2 +1,4 @@
 D:\hg\ConsoleApplication3\Debug\ConsoleApplication3.exe
 D:\hg\ConsoleApplication3\Debug\ConsoleApplication3.pdb
+D:\Programming\Practice\03\C++\ConsoleApplication3\Debug\ConsoleApplication3.exe
+D:\Programming\Practice\03\C++\ConsoleApplication3\Debug\ConsoleApplication3.pdb
