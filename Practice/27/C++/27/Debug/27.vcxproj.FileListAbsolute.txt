@@ -1,0 +1,2 @@
+D:\Programming\Practice\27\C++\27\Debug\27.exe
+D:\Programming\Practice\27\C++\27\Debug\27.pdb

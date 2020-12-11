@@ -1,0 +1,12 @@
+# output files
+*.out
+*.o
+*.log
+*.exe
+*.json
+**/build
+# Removing IDE-related files
+.idea/
+cmake-build-debug/
+CMakeLists.txt
+.vscode
