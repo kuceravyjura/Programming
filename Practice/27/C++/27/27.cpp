@@ -29,12 +29,22 @@ int main()
 	for (int i = 0; i < n; i++) {
 		cin >> a[i];
 	}int c = 1;
-	vector<int> b;
+	vector<int> b; int z = 5; int count2 = 0;
 	for (int i = 0;i < n;i++) {
 		b.push_back(a[i]);
 		b = sort(b);
-		for (int c = 0; c < size(b); c++) {
-			cout << b[c]<< ' ';
+		int count = 1;
+		count2++; int y = z-5;if (count2 > 4) y = size(b) - 5; else y = z - 5;
+		for (int c = 0 ; c < size(b); c++) {
+			
+			if (count == 6) { 
+				z++;
+				break; 
+			}
+			cout << b[y]<< ' ';
+			count++;
+			y++;
+			
 		}
 		cout << endl;
 	}
