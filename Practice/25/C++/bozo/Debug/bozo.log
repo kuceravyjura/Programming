@@ -1,2 +1,7 @@
 ﻿  bozo.cpp
+D:\Programming\Practice\25\C++\bozo\bozo.cpp(132,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\Programming\Practice\25\C++\bozo\bozo.cpp(136,52): warning C4244: аргумент: преобразование "double" в "const unsigned int", возможна потеря данных
+D:\Programming\Practice\25\C++\bozo\bozo.cpp(136,31): warning C4244: аргумент: преобразование "double" в "const unsigned int", возможна потеря данных
+D:\Programming\Practice\25\C++\bozo\bozo.cpp(56,9): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\Programming\Practice\25\C++\bozo\bozo.cpp(151): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::vector<int,std::allocator<int>> BozoSort<int>(std::vector<std::vector<int,std::allocator<int>>,std::allocator<std::vector<int,std::allocator<int>>>>,int,bool)"
   bozo.vcxproj -> D:\Programming\Practice\25\C++\bozo\Debug\bozo.exe

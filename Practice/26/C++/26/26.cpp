@@ -1,20 +1,183 @@
-﻿// 26.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//
+﻿#include <iostream> 
+#include <ctime> 
+#include <vector> 
+#include <cmath> 
+using namespace std;
+template<class T>
 
-#include <iostream>
+vector<T> BozoSort(vector<T>a, int n, bool y) {
+	int x1, x2, z = 0, check = 0;
+	vector <T> b(n);
+	while (1) {
+		x1 = rand() % n;
+		x2 = rand() % n;
+		if (x1 != x2) {
+			swap(a[x1], a[x2]);
+			for (int i = 0; i < n - 1; i++) {
+				if (a[i] <= a[i + 1]) {
+					z++;
+				}
+				else {
+					z = 0;
+					break;
+				}
+				if (z == n - 1) {
+					for (int i = 0; i < n; i++) {
+						b[i] = a[i];
+					}
+					check = 1;
+					break;
+				}
+			}
+			if (check == 1) {
+				if (y) {
+					for (int i = 0; i < n; i++) {
+						cout << b[i] << " ";
+					}
+				}
+				else if (y == 0) {
+					for (int i = n - 1; i >= 0; i--) {
+						cout << b[i] << " ";
+					}
+				}
+				cout << "\n";
+				return b;
+				break;
+			}
+		}
+	}
+}
+template<class T>
+vector<T> BozoSort(vector <vector < T>>a, int n, bool y) {
+	int y1, y2, y3, y4, chlen = 0, prov = 0, c = 0;
+	vector <T> b(n);
+	while (1)
+	{
+		int f = sqrt(n);
+		y1 = rand() % f;
+		y2 = rand() % f;
+		y3 = rand() % f;
+		y4 = rand() % f;
+		if (y1 != y3 || y2 != y4) {
+			swap(a[y1][y2], a[y3][y4]);
+			for (int i = 0; i <= sqrt(n) - 1; i++) {
+				for (int j = 0; j <= sqrt(n) - 1; j++) {
+					if (j == sqrt(n) - 1) {
+						if (i == sqrt(n) - 1) {
+							if (chlen == n - 1) {
+								for (int i = 0; i < sqrt(n); i++) {
+									for (int j = 0; j < sqrt(n); j++) {
+										b[c] = a[i][j];
+										c++;
+									}
+								}
+								prov = 1;
+								break;
+							}
+							else {
+								break;
+							}
+						}
+						if (a[i][j] <= a[i + 1][0]) {
+							chlen++;
+						}
+						else {
+							chlen = 0;
+							break;
+						}
+					}
+					else {
+						if (a[i][j] <= a[i][j + 1]) {
+							chlen++;
+						}
+						else {
+							chlen = 0;
+							break;
+						}
+					}
+				}
+			}
 
-int main()
-{
-    std::cout << "Hello World!\n";
+			if (prov == 1) {
+				if (y) {
+					for (int i = 0; i < n; i++) {
+						cout << b[i] << " ";
+					}
+				}
+				else if (y == 0) {
+					for (int i = n - 1; i >= 0; i--) {
+						cout << b[i] << " ";
+					}
+				}
+				cout << "\n";
+				return b;
+				break;
+			}
+		}
+	}
 }
 
-// Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
-// Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
+template<class T>
+vector<T> BozoSort(vector<T>a, bool y) {
+	if (y == 1) {
+		return BozoSort(a, 3, y);
+	}
+	else
+		return BozoSort(a, 3, y);
+}
 
-// Советы по началу работы 
-//   1. В окне обозревателя решений можно добавлять файлы и управлять ими.
-//   2. В окне Team Explorer можно подключиться к системе управления версиями.
-//   3. В окне "Выходные данные" можно просматривать выходные данные сборки и другие сообщения.
-//   4. В окне "Список ошибок" можно просматривать ошибки.
-//   5. Последовательно выберите пункты меню "Проект" > "Добавить новый элемент", чтобы создать файлы кода, или "Проект" > "Добавить существующий элемент", чтобы добавить в проект существующие файлы кода.
-//   6. Чтобы снова открыть этот проект позже, выберите пункты меню "Файл" > "Открыть" > "Проект" и выберите SLN-файл.
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	srand(time(NULL));
+	cout << "1 double, любое другое string";
+	int lel; cin >> lel;
+	if (lel == 1) {
+		int n, k = 0;
+		cout << "Введите количество элементов в массиве n: "; cin >> n;
+		vector <double> a(n);
+		vector <vector <double>> b(sqrt(n), vector<double>(sqrt(n)));
+
+		cout << "Введите n элементов массива\n";
+		for (int i = 0; i < n; i++) {
+			cin >> a[i];
+		}
+		for (int i = 0; i < sqrt(n); i++) {
+			for (int j = 0; j < sqrt(n); j++) {
+				b[i][j] = a[k];
+				k++;
+			}
+		}
+		cout << "\n";
+		BozoSort(a, n, 1);
+		BozoSort(a, n, 0);
+		BozoSort(b, n, 1);
+		BozoSort(b, n, 0);
+		BozoSort(a, 1);
+		BozoSort(a, 0);
+	}
+	else {
+		int n, k = 0;
+		cout << "Введите количество элементов в массиве n: "; cin >> n;
+		vector <string> a(n);
+		vector <vector <string>> b(sqrt(n), vector<string>(sqrt(n)));
+
+		cout << "Введите n элементов массива\n";
+		for (int i = 0; i < n; i++) {
+			cin >> a[i];
+		}
+		for (int i = 0; i < sqrt(n); i++) {
+			for (int j = 0; j < sqrt(n); j++) {
+				b[i][j] = a[k];
+				k++;
+			}
+		}
+		cout << "\n";
+		BozoSort(a, n, 1);
+		BozoSort(a, n, 0);
+		BozoSort(b, n, 1);
+		BozoSort(b, n, 0);
+		BozoSort(a, 1);
+		BozoSort(a, 0);
+	}
+}
