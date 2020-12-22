@@ -1,2 +1,0 @@
-D:\Programming\Practice\12\C++\факториал\Debug\факториал.exe
-D:\Programming\Practice\12\C++\факториал\Debug\факториал.pdb

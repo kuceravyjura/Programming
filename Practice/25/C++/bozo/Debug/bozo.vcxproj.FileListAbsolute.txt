@@ -1,2 +1,0 @@
-D:\Programming\Practice\25\C++\bozo\Debug\bozo.exe
-D:\Programming\Practice\25\C++\bozo\Debug\bozo.pdb

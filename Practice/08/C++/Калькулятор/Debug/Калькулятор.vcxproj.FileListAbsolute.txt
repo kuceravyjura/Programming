@@ -1,2 +1,0 @@
-D:\Programming\Practice\08\C++\Калькулятор\Debug\Калькулятор.exe
-D:\Programming\Practice\08\C++\Калькулятор\Debug\Калькулятор.pdb

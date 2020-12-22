@@ -1,2 +1,0 @@
-D:\Programming\Practice\15\C++\ConsoleApplication6\Debug\ConsoleApplication6.exe
-D:\Programming\Practice\15\C++\ConsoleApplication6\Debug\ConsoleApplication6.pdb

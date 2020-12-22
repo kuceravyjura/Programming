@@ -1,4 +1,0 @@
-﻿  20.cpp
-D:\Programming\Practice\20\C++\20\20\20.cpp(14,23): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
-D:\Programming\Practice\20\C++\20\20\20.cpp(18,13): warning C4244: =: преобразование "__int64" в "int", возможна потеря данных
-  20.vcxproj -> D:\Programming\Practice\20\C++\20\Debug\20.exe

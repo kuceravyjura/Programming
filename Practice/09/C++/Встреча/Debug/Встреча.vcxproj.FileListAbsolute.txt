@@ -1,2 +1,0 @@
-D:\Programming\Practice\09\C++\Встреча\Debug\Встреча.exe
-D:\Programming\Practice\09\C++\Встреча\Debug\Встреча.pdb

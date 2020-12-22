@@ -1,2 +1,0 @@
-D:\labs\test\test\Debug\test.exe
-D:\labs\test\test\Debug\test.pdb
