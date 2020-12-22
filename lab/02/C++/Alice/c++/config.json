@@ -1,0 +1,5 @@
+{
+    "webhooks": [
+        "http://localhost:1234/yandex_hook"
+    ]
+}
