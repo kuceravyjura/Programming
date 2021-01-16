@@ -21,7 +21,6 @@ void Replacement(std::string& data, std::string toSearch, std::string replaceStr
 }
 
 void gen_response(const Request& req, Response& res) {
-    setlocale(LC_CTYPE, "rus");
     string CurrentWeather;
     string Picture;
     float Temp;
