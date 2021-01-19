@@ -23,8 +23,6 @@ std::string gen_webhook_page();
 
 void webhooks_get(const Request& req, Response& res);
 void webhooks_post(const Request& req, Response& res);
-
-
 void yandex_hook(const Request& req, Response& res);
 
 
@@ -35,6 +33,7 @@ int main()
 	srv.Get("/webhooks", webhooks_get);
 	srv.Post("/webhooks", webhooks_post);
 	srv.Post("/yandex_hook", yandex_hook);
+	srv.Post("/", yandex_hook);
 
 	std::cout << "Сервер успешно запустился!\n"<< "Сервер откыт по адресу localhost:1234\n\n"<< "Откройте http://localhost:1234/webhooks в веб-браузере, "<< "чтобы получить доступ к панели управления веб-хуками.\n"<< std::endl;
 

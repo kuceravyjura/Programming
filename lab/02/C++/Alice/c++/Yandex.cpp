@@ -452,8 +452,8 @@ void yandex_hook(const Request& req, Response& res)
 		else if (command.find("добавить в корзину") == 0 || command.find("добавь в корзину") == 0)
 		{
 			size_t size = req_json["request"]["nlu"]["tokens"].size();
-			std::string text = "ОК.";
-			std::string tts = "Ок+ей.";
+			std::string text = "Дело сделано.";
+			std::string tts = "Де+ло+о сде+е+ла+но.";
 			std::string item_name;
 			int			item_price = 0;
 			int			number_index = 0;
