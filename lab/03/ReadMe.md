@@ -87,8 +87,8 @@
 
 рисунок 3 конец игры.
 
-<details>
-    import random
+```python
+import random
 from tkinter import Tk, Button, Canvas, NW, W, TclError, Label
 
 from PIL import Image, ImageTk
@@ -567,7 +567,7 @@ if __name__ == '__main__':
     except Exception as e:
         print('Error:', e)
         exit()
-</details>
+```
 
 
 
