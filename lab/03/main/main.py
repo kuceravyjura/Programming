@@ -468,7 +468,7 @@ if __name__ == '__main__':
             root.update()
             if game_over:
                 if game_over_label == None:
-                    game_over_label = Label(root, font=('Arial', 20), text='игра окончена', fg='white', bg='#666666')
+                    game_over_label = Label(root, font=('Arial', 20), text='Игра окончена', fg='white', bg='#666666')
                     game_over_label.place(x=root.winfo_width() // 2 + 180, y=root.winfo_height() // 2 + 50)
 
 

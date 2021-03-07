@@ -251,11 +251,11 @@ root.mainloop()
 
 Скриншот клиента:
 
-![client](D:\Programming\lab\01\C++\screens\client.PNG)
+![](./C++/screens/client.PNG)
 
 Скриншот виджета:
 
-![widget](D:\Programming\lab\01\C++\screens\widget.PNG)
+![](./C++/screens/widget.PNG)
 
 ## Вывод по работе. 
 Цель работы была успешно достигнута. Было выполнено:

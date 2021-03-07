@@ -4,18 +4,16 @@ import requests
 
 def reload_data(event=None):
 	try:
-		response = requests.get('https://821a10c9bb92.ngrok.io/raw').content.decode("utf8")
+		response = requests.get('https://07bc149633a1.ngrok.io/raw').content.decode("utf8")
 		forecast_j = json.loads(response)
 
 		desc.config(text=str(forecast_j["weather"]))
-		temp.config(text=str(round(forecast_j["temp"])) + "°C")
+		temp.config(text=str(round(forecast_j["tem``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````p"])) + "°C")
 	except requests.exceptions.ConnectionError:
 		pass
 
 root = Tk()
 root.title("Погода")
-root.pack_propagate(0)
-root.bind("<Button-1>", reload_data)
 root.geometry("200x250")
 
 _yellow = "#ffb84d"
